@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+.background-img{
+    background-image: url("./img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-contact{
+    background-image: url("./img/bg-contact.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5%;
+    position: relative;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.6px);
+    -webkit-backdrop-filter: blur(2.6px);
+    border: 1px solid rgba(255, 255, 255, 0.41);
+}
+nav h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+nav h1 a:hover{
+    color: #49c5b6;
+    transition-duration: .5s;
+}
+
+nav h1{
+    color: white;
+    cursor: pointer;
+    border: 2px solid #49c5b6 ;
+    padding: 2px;
+    position:relative; 
+}
+
+nav h1:hover{
+    color: #49c5b6;
+    transition-duration: .5s;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: #49c5b6;
+    margin: 0 14px;
+    font-size: 20px;
+}
+
+.nav-links ul li a:hover{
+    color: aqua;
+    transition-duration: .5s;
+    font-size: 21px;
+}
+
+.main-page{
+    padding: 3% 4%;
+}
+
+.row{
+    display: flex;
+}
+
+.col-1{
+    flex-basis: 50%;
+}
+
+.col-1 h1{
+    margin-top: 300px;
+    margin-left: 200px;
+    color: antiquewhite;
+}
+
+.col-2 img{
+    width: 500px;
+    margin-top: 150px;
+    margin-left: 100px;
+    
+}
+
+.skills{
+    display: flex;
+    margin-left: 200px;
+}
+
+.skills i{
+    margin: 50px 14px;
+    width: 30px;
+    cursor: pointer;
+    font-size: 40px;
+    color: #49c5b6;
+}
+
+.skills i:hover{
+    color: aqua;
+    transition-duration: .3s;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    flex-direction: column;
+    margin-bottom: 2px;
+}
+
+footer h3{
+    margin-bottom: 10px;
+}
+
+.footer-container h3{
+    color: antiquewhite;
+}
+
+.footerline{
+    width: 95%;
+    height: 2px;
+    background-color:#49c5b6 ;
+}
+
+.socialmedia {
+    justify-content: space-between;
+}
+
+.socialmedia i{
+    font-size: 25px;
+    color: #49c5b6;
+    width: 40px;
+    cursor: pointer; 
+}
+
+.socialmedia i:hover{
+    color:aqua;
+    transition-duration: .3s;
+}
+
+small{
+    color: antiquewhite;
+}
+
+.contact h1{
+    margin: 70px 0;
+    color: antiquewhite;
+}
+.contact-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-container form{
+    border-radius: 20px;
+    display: flex;
+    
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(7, 240, 240, 0.801) 0px 0px 30px;
+}
+
+.contact-container form input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 8px; 
+    width: 280px;
+}
+
+.contact-container form textarea{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 8px; 
+    width: 280px;
+}
+
+.contact-container form button{
+    border: none;
+    padding: 10px 15px;
+    background-color: black;
+    color: aqua;
+    cursor: pointer;
+    border-radius: 8px; 
+    width: 100px;
+    align-items: center;
+}
+
+.contact-container form button:hover{
+    background-color: white;
+    color: black;
+}
+
+.col-1 span:before{
+    content: "Web Developer";
+}
+
+.col-1 span{
+    position: relative;
+    color: rgba(92, 82, 82, 0.788);
+}
+
+.col-1 span:after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: 20px;
+    transition: 0.3s;
+}
+
+.col-1 span:hover:after{
+    content: "Jobless😞";
+    color: antiquewhite;
+}
+
+.col-1 span:hover:after{
+    width: 100%;
+}
